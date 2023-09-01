@@ -1,0 +1,54 @@
+* { font-family: 'Vina Sans'
+}
+
+#board, .boardInfo {
+    max-width: 500px;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+#start, .boardInfo {
+    font-size: 25px;
+}
+
+#gameOver {
+    display: none;
+}
+
+.boardInfo {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+#start {
+    background-color: #76f00a;
+    border: none;
+    border-radius: 20%;
+    color: rgb(31, 95, 7);
+}
+
+#scoreBoard {
+    display: inline-flex;
+}
+
+.square {
+    aspect-ratio: 1;
+}
+
+.emptySquare {
+    background-color: #e7d80e;
+}
+
+.snakeSquare {
+    background-color: #109f34;
+    border: 1px solid #000;
+}
+
+.foodSquare {
+    background-color: #ad1305;
+    border: 1px solid #000;
+}
